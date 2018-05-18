@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/menu_login"
+        android:icon="@mipmap/login_black"
+        android:title="登录"/>
+    <item
+        android:icon="@mipmap/use_help_black"
+        android:id="@+id/menu_useInfo"
+        android:title="使用说明"/>
+    <item
+        android:icon="@mipmap/setting_blue"
+        android:id="@+id/menu_setting"
+        android:title="设置"/>
+
+    <item
+        android:icon="@mipmap/clear_black"
+        android:id="@+id/menu_clear"
+        android:title="清除缓存"/>
+
+    <item
+        android:icon="@mipmap/about_us_black"
+        android:id="@+id/menu_about_us"
+        android:title="关于我们"/>
+    <item
+        android:icon="@mipmap/logout_black"
+        android:id="@+id/menu_logout"
+        android:title="关闭应用"/>
+
+
+</group>
+</menu>

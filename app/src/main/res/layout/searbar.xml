@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/m_light_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/book_name"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:drawableStart="@mipmap/search"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="15sp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:drawableEnd="@mipmap/clear"
+                android:hint="请输入关键字"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/book_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_width="70dp"
+            android:background="@drawable/search_button"
+            android:layout_height="40dp"
+            android:text="搜索"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

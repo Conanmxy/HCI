@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.22"
+            android:textSize="14dp"
+            android:textColor="#b3b3b3"
+            android:maxLines="1"
+            android:id="@+id/diary_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diary_date"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:id="@+id/diary_item"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

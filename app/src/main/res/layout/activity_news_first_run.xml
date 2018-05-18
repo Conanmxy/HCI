@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.s1.newsActivity.NewsFirstRunActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/title_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="选择您喜欢的新闻类型"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="150dp"
+        android:layout_below="@+id/title_select"
+       >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/politics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/politics_un"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:text="政治"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/war"
+                android:src="@mipmap/war_un"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:padding="4dp"
+                android:text="军事"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/finance"
+                android:src="@mipmap/finance_un"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:padding="4dp"
+                android:text="财经"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fun"
+                android:src="@mipmap/fun_un"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:padding="4dp"
+                android:text="电影"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/technology_outside"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/technology"
+                android:src="@mipmap/technology_un"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:padding="4dp"
+                android:text="数码"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sport_un"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:padding="4dp"
+                android:text="体育"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/finish"
+            android:layout_below="@+id/technology_outside"
+            android:layout_marginTop="60dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
