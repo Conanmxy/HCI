@@ -47,4 +47,12 @@
     </style>
 
 
+
+
+    <style name="SlideMenuTheme" parent="AppTheme">
+        <item name="actionMenuTextColor">@color/green</item> <!--颜色-->
+        <item name="android:textSize">18dp</item> <!--字体大小-->
+    </style>
+
+
 </resources>

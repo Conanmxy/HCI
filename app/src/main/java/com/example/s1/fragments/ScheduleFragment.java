@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import com.example.s1.LoginActivity;
 import com.example.s1.R;
@@ -25,6 +28,11 @@ import com.example.s1.test.TestMainActivity;
  * A simple {@link Fragment} subclass.
  */
 public class ScheduleFragment extends Fragment {
+
+    ScrollView campusScroll;
+    LinearLayout campusLinear;
+    LinearLayoutManager linearLayoutManager;
+
 
 
     public ScheduleFragment() {
@@ -47,6 +55,21 @@ public class ScheduleFragment extends Fragment {
 
         SharedPreferences pref=getActivity().getSharedPreferences("TJuser", Context.MODE_PRIVATE);
         final boolean isIn=pref.getBoolean("isIn",false);
+
+       // campusScroll=(ScrollView)findViewById(R.id.campus_scroll);
+
+        campusLinear=(LinearLayout)getActivity().findViewById(R.id.campus_linear);
+        if(isIn)
+        {
+            campusLinear.setVisibility(View.VISIBLE);
+            //campusScroll.setVisibility(View.INVISIBLE);
+        }
+        else
+        {
+            campusLinear.setVisibility(View.GONE);
+        }
+
+
         //查询绩点
         CardView queryScore=(CardView)getActivity().findViewById(R.id.query_score);
         queryScore.setOnClickListener(new View.OnClickListener() {

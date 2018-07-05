@@ -15,11 +15,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -67,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
     MenuItem menuLogin;
     MenuItem addMenu;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentList.add(scheduleFragment=new ScheduleFragment());
         fragmentList.add(newsFragment=new NewsFragment());
         fragmentList.add(diaryFragment=new DiaryFragment());
+
         initViews();
         initEvents();
         register();
@@ -231,11 +234,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        //显示已登录
-
-
-
-
     }
 
     private void initViews(){
@@ -247,12 +245,12 @@ public class MainActivity extends AppCompatActivity {
         delMenu=new ArrayList<>();
         MainTitle=(TextView)findViewById(R.id.main_title);
         MainTitle.setText("校园");
+
+
        // menuLogin=(MenuItem) findViewById(R.id.menu_login);
 
         menuLogin=navView.getMenu().findItem(R.id.menu_login);
 
-        if(menuLogin==null)
-            System.out.println("null............") ;
 
 
         //处理toolbar

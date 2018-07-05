@@ -26,28 +26,48 @@ implements View.OnClickListener{
     ImageView cbTechnology;
     ImageView cbSport;
     TextView finished;
+    boolean[] f=new boolean[6];
+
 
     @Override
     public void onClick(View v){
         switch (v.getId())
         {
             case R.id.politics:
-                cbPolitics.setImageResource(R.mipmap.politics);
+                f[0]=!f[0];
+                if(f[0])
+                    cbPolitics.setImageResource(R.mipmap.politics);
+                else cbPolitics.setImageResource(R.mipmap.politics_un);
                 break;
             case R.id.war:
+                f[1]=!f[1];
+                if(f[1])
                 cbWar.setImageResource(R.mipmap.war);
+                else cbWar.setImageResource(R.mipmap.war_un);
                 break;
             case R.id.finance:
+                f[2]=!f[2];
+                if(f[2])
                 cbFinance.setImageResource(R.mipmap.finance);
+                else cbFinance.setImageResource(R.mipmap.finance_un);
                 break;
             case R.id.fun:
+                f[3]=!f[3];
+                if(f[3])
                 cbFun.setImageResource(R.mipmap.fun);
+                else cbFun.setImageResource(R.mipmap.fun_un);
                 break;
             case R.id.technology:
+                f[4]=!f[4];
+                if(f[4])
                 cbTechnology.setImageResource(R.mipmap.technology);
+                else cbTechnology.setImageResource(R.mipmap.technology_un);
                 break;
             case R.id.sport:
+                f[5]=!f[5];
+                if(f[5])
                 cbSport.setImageResource(R.mipmap.sport);
+                else cbSport.setImageResource(R.mipmap.sport_un);
                 break;
         }
     }

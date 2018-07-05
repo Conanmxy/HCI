@@ -65,13 +65,13 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal"
-        android:background="#e4eaea"
+        android:background="#f4f8f8"
         android:showDividers="middle">
         <TextView
             android:singleLine="false"
             android:id="@+id/month"
             android:textSize="13dp"
-            android:layout_width="50dp"
+            android:layout_width="30dp"
             android:layout_height="match_parent"
             android:gravity="center"
             />
@@ -115,8 +115,8 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="50dp"
-                android:background="#e4eaea"
+                android:layout_width="30dp"
+                android:background="#f4f8f8"
                 android:layout_height="match_parent">
                 <TextView
                     style="@style/first_item"

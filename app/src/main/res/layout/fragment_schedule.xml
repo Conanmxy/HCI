@@ -182,208 +182,233 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-    <android.support.v7.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:clickable="true"
-        android:foreground="?selectableItemBackground"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="0dp"
-        app:cardElevation="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/campus_scroll">
 
-        >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="最近日记"
-                android:textSize="20dp"
-                android:textColor="#b3b3b3"
-                android:maxLines="1"
-                android:id="@+id/t1"
-                android:padding="10dp"/>
-            <LinearLayout
+            android:id="@+id/campus_linear">
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+
                 >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/t1"
-                    android:layout_marginTop="5dp"
-                    android:textSize="20dp"
-                    android:textColor="#777777"
-                    android:maxLines="3"
-                    android:ellipsize="end"
-                    android:id="@+id/ddl1"
-                    android:text="dfjefjkel">
-
-                </TextView>
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:clickable="true"
-        android:foreground="?selectableItemBackground"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="0dp"
-        app:cardElevation="0dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="第十一周  周五"
-                android:textSize="20dp"
-                android:textColor="#b3b3b3"
-                android:maxLines="1"
-                android:id="@+id/t2"
-                android:padding="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                >
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25dp"
-                    android:textColor="#777777"
-                    android:maxLines="3"
-                    android:ellipsize="end"
-                    android:id="@+id/d"
-                    android:text="5-6">
-
-                </TextView>
-
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="10dp">
 
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/t1"
-                        android:layout_marginTop="5dp"
-                        android:textSize="22dp"
-                        android:textColor="#777777"
-                        android:maxLines="3"
-                        android:ellipsize="end"
-                        android:id="@+id/ddl239"
-                        android:text="计算机系统实验">
+                        android:text="最近日记"
+                        android:textSize="20dp"
+                        android:textColor="#b3b3b3"
+                        android:maxLines="1"
+                        android:id="@+id/t1"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t1"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:textColor="#777777"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:id="@+id/ddl1"
+                            android:text="编译原理课设ddl 5月15号">
 
-                    </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/t1"
-                        android:layout_marginTop="10dp"
-                        android:textSize="18dp"
-                        android:textColor="#aaaaaa"
-                        android:ellipsize="end"
-                        android:id="@+id/d2"
-                        android:text="B204">
+                        </TextView>
+                    </LinearLayout>
 
-                    </TextView>
                 </LinearLayout>
 
-            </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-            <LinearLayout
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
                 >
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25dp"
-                    android:textColor="#777777"
-                    android:maxLines="3"
-                    android:ellipsize="end"
-                    android:id="@+id/ddl22"
-                    android:text="9-11">
-
-                </TextView>
-
-
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="10dp">
 
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/t1"
-                        android:layout_marginTop="5dp"
-                        android:textSize="22dp"
-                        android:textColor="#777777"
-                        android:maxLines="3"
-                        android:ellipsize="end"
-                        android:id="@+id/ddl23"
-                        android:text="操作系统">
+                        android:text="第11周  周五"
+                        android:textSize="20dp"
+                        android:textColor="#b3b3b3"
+                        android:maxLines="1"
+                        android:id="@+id/t2"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        >
 
-                    </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/t1"
-                        android:layout_marginTop="10dp"
-                        android:textSize="18dp"
-                        android:textColor="#aaaaaa"
-                        android:ellipsize="end"
-                        android:id="@+id/ddl2"
-                        android:text="B201">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="23dp"
+                            android:textColor="#777777"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:id="@+id/d"
+                            android:text="5-6">
 
-                    </TextView>
+                        </TextView>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t1"
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"
+                                android:textColor="#777777"
+                                android:maxLines="3"
+                                android:ellipsize="end"
+                                android:id="@+id/ddl239"
+                                android:text="计算机系统实验">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t1"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16dp"
+                                android:textColor="#aaaaaa"
+                                android:ellipsize="end"
+                                android:id="@+id/d2"
+                                android:text="B204">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="23dp"
+                            android:textColor="#777777"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:id="@+id/ddl22"
+                            android:text="9-11">
+
+                        </TextView>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t1"
+                                android:layout_marginTop="5dp"
+                                android:textSize="20dp"
+                                android:textColor="#777777"
+                                android:maxLines="3"
+                                android:ellipsize="end"
+                                android:id="@+id/ddl23"
+                                android:text="操作系统">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/t1"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16dp"
+                                android:textColor="#aaaaaa"
+                                android:ellipsize="end"
+                                android:id="@+id/ddl2"
+                                android:text="B201">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
                 </LinearLayout>
 
-            </LinearLayout>
 
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n\n"/>
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+
+
+
+
 </LinearLayout>

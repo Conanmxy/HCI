@@ -2,8 +2,10 @@ package com.example.s1.fragments;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +17,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 
 
+import com.example.s1.DiaryActivity.WriteDiaryActivity;
 import com.example.s1.R;
 import com.example.s1.adapter.DiaryAdapter;
 import com.example.s1.entity.DiaryText;
@@ -42,6 +45,7 @@ public class DiaryFragment extends Fragment {
     private RecyclerView recyclerView;
     private int resId;
     private LayoutAnimationController animationController;
+    private FloatingActionButton fab;
     @Nullable
 
     @Override
@@ -67,6 +71,7 @@ public class DiaryFragment extends Fragment {
     public void initialFragmentView()
     {
         recyclerView=(RecyclerView)getActivity().findViewById(R.id.recycler_view);
+        fab=(FloatingActionButton)getActivity().findViewById(R.id.fab);
         LinearLayoutManager layoutManager=new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         adapter=new DiaryAdapter(diaryTextList);
@@ -74,6 +79,17 @@ public class DiaryFragment extends Fragment {
         resId=R.anim.animation_slide_right;
         animationController= AnimationUtils.loadLayoutAnimation(getActivity(),resId);
         recyclerView.setLayoutAnimation(animationController);
+
+
+        //浮动按钮监听事件
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), WriteDiaryActivity.class);
+                intent.putExtra("current_title","新建");
+                startActivity(intent);
+            }
+        });
     }
     private void initDiaryText()
     {

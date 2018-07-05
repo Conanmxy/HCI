@@ -40,7 +40,7 @@
             android:id="@+id/aBookIntro"
             android:maxLines="11"
             android:ellipsize="end"
-            android:text="dfefdd"/>
+            android:text="正在加载..."/>
     </LinearLayout>
 
 

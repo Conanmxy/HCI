@@ -39,9 +39,10 @@ public class SyllabusActivity extends AppCompatActivity {
     String userName;
     String password;
     SharedPreferences.Editor editor;
-    String []Course_backgroundcolor=new String[]{"#4EF037","#2FE1D6","#ED5485","#44D9E6","#1c92d2"
-            ,"#F677F7","#ED93CB"};
-    //TextView Course;
+    String []Course_backgroundcolor=new String[]{"#ab90ff","#ff9393","#ff9dd8","#86b0fe","#f8de5b"
+            ,"#aeec35","#ab90ff"};
+    //TextView Course;.
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
